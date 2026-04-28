@@ -1,0 +1,12 @@
+.logo {
+  display: inline-block;
+  font-family: var(--font-mega-wordmark), var(--font-landing-display), var(--font-sans);
+  font-size: clamp(1.85rem, 5vw, 2.65rem);
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  line-height: 1;
+  color: #0a0a0a;
+  text-transform: uppercase;
+  margin: 0;
+  padding-inline: 0.15em;
+}

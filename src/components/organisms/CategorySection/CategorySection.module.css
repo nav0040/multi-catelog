@@ -1,0 +1,21 @@
+.section {
+  padding: var(--space-xl) var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  min-width: 0;
+}
+
+.section:nth-child(even) {
+  background: color-mix(in srgb, var(--color-surface) 55%, var(--color-bg));
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: var(--space-lg);
+  min-width: 0;
+}

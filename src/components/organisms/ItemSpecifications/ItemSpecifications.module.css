@@ -1,0 +1,16 @@
+.panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) clamp(var(--space-sm), 3vw, var(--space-lg));
+  min-width: 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.empty {
+  margin: 0;
+}

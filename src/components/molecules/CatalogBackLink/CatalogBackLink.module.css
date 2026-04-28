@@ -1,0 +1,13 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
+}
+
+.link:hover {
+  text-decoration: underline;
+}

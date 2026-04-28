@@ -1,0 +1,191 @@
+.root {
+  position: relative;
+  width: 100%;
+  min-height: min(85vh, 880px);
+  height: min(85vh, 880px);
+  max-height: 920px;
+  background: #fafafa;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.rootReduced {
+  touch-action: auto;
+}
+
+@media (max-width: 767px) {
+  .root {
+    min-height: min(78vh, 720px);
+    height: min(78vh, 720px);
+  }
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.introBlock {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  width: min(100% - 2.5rem, min(17.5rem, 46vmin));
+  max-width: min(17.5rem, 46vmin);
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+}
+
+.introTitle {
+  margin: 0;
+  font-size: clamp(0.8125rem, 2.35vw, 1.125rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #1f2937;
+  line-height: 1.35;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.introHint {
+  margin: 0.65rem 0 0;
+  font-size: clamp(0.5rem, 1.35vw, 0.5625rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b7280;
+  line-height: 1.45;
+  max-width: 100%;
+}
+
+.arcContent {
+  position: absolute;
+  top: clamp(5%, 8vh, 10%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  width: min(100% - 2rem, min(19rem, 48vmin));
+  max-width: min(19rem, 48vmin);
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+}
+
+.arcHeadline {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1rem, 2.85vw, 1.375rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #111827;
+  line-height: 1.25;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.arcBody {
+  margin: 0;
+  font-size: clamp(0.6875rem, 1.65vw, 0.8125rem);
+  color: #4b5563;
+  line-height: 1.55;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.brDesktopOnly {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .brDesktopOnly {
+    display: block;
+  }
+}
+
+.cardsStage {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+.productTile {
+  position: absolute;
+  transform-style: flat;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(15, 20, 25, 0.08);
+  box-shadow: 0 8px 22px -6px rgba(15, 20, 25, 0.12), 0 2px 8px -2px rgba(15, 20, 25, 0.06);
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.bottomFade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: min(28%, 200px);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.95), transparent);
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Lifted + extra top padding so arc tiles never crowd the caption */
+.scrollCue {
+  position: absolute;
+  bottom: max(2.65rem, calc(0.35rem + env(safe-area-inset-bottom)));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8;
+  max-width: min(calc(100% - 2rem), 22rem);
+  padding: clamp(0.85rem, 2.8vmin, 1.25rem) max(0.65rem, env(safe-area-inset-left)) 0.4rem
+    max(0.65rem, env(safe-area-inset-right));
+  text-align: center;
+  font-size: clamp(0.625rem, 1.9vw, 0.8125rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+  pointer-events: none;
+  line-height: 1.45;
+  text-wrap: balance;
+}
+
+@media (min-width: 768px) {
+  .scrollCue {
+    bottom: max(2.35rem, calc(0.25rem + env(safe-area-inset-bottom)));
+    padding-top: clamp(0.75rem, 1.8vw, 1rem);
+    font-size: clamp(0.6875rem, 1.2vw, 0.875rem);
+  }
+}

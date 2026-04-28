@@ -1,0 +1,63 @@
+[
+  {
+    "itemname": "Ducati Panigale V4",
+    "category": "Bikes",
+    "image": "https://images.ctfassets.net/x7j9qwvpvr5s/43adRuY33iuCayAyMy3wTw/5545b174f876fc95ffcfff3d643c4d23/Ducati-MY25-Panigale-V4-overview-carousel-hero-link-1600x650-01.jpg",
+    "itemprops": [
+      { "label": "Type", "value": "Superbike" },
+      { "label": "Displacement", "value": "1,103 cc" },
+      { "label": "Max Power", "value": "214 hp" }
+    ]
+  },
+  {
+    "itemname": "Royal Enfield Himalayan",
+    "category": "Bikes",
+    "image": "https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/himalayan-450/gma/gma-himalayan.webp",
+    "itemprops": [
+      { "label": "Engine", "value": "Sherpa 450" },
+      { "label": "Weight", "value": "196 kg" }
+    ]
+  },
+  {
+    "itemname": "Kawasaki Ninja H2",
+    "category": "Bikes",
+    "image": "https://cdn.bikedekho.com/processedimages/kawasaki/kawasaki-ninja-h2/source/kawasaki-ninja-h261a5ba444bbd9.jpg",
+    "itemprops": [{ "label": "Supercharged", "value": "Yes" }]
+  },
+  {
+    "itemname": "BMW S1000RR",
+    "category": "Bikes",
+    "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=800&auto=format&fit=crop",
+    "itemprops": [{ "label": "HP", "value": "205" }]
+  },
+  {
+    "itemname": "Harley Fat Boy",
+    "category": "Bikes",
+    "image": "https://images.unsplash.com/photo-1646904473811-a6a4b3a0a508?q=80&w=774&auto=format&fit=crop",
+    "itemprops": [{ "label": "Engine", "value": "Milwaukee-Eight 114" }]
+  },
+  {
+    "itemname": "Triumph Rocket 3",
+    "category": "Bikes",
+    "image": "https://images.unsplash.com/photo-1740750047356-47f64339d196?q=80&w=387&auto=format&fit=crop",
+    "itemprops": [{ "label": "CC", "value": "2458cc" }]
+  },
+  {
+    "itemname": "Yamaha R1",
+    "category": "Bikes",
+    "image": "https://images.unsplash.com/photo-1626840362735-afb64615318d?q=80&w=387&auto=format&fit=crop",
+    "itemprops": [{ "label": "Tech", "value": "Crossplane" }]
+  },
+  {
+    "itemname": "Suzuki Hayabusa",
+    "category": "Bikes",
+    "image": "https://images.unsplash.com/photo-1719161107534-6dc58147c3a4?q=80&w=774&auto=format&fit=crop",
+    "itemprops": [{ "label": "Top Speed", "value": "299 km/h" }]
+  },
+  {
+    "itemname": "KTM Duke 390",
+    "category": "Bikes",
+    "image": "https://images.unsplash.com/photo-1591378603223-e15b45a81640?q=80&w=870&auto=format&fit=crop",
+    "itemprops": [{ "label": "Weight", "value": "165kg" }]
+  }
+]

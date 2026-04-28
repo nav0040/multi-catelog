@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.125rem 0.25rem;
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: var(--space-xs);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "itemname": "iPhone 16 Pro",
+    "category": "Phones",
+    "image": "https://images.unsplash.com/photo-1726732970014-f2df88c87dd3?q=80&w=1032&auto=format&fit=crop",
+    "itemprops": [
+      { "label": "Lens Type", "value": "Tetraprism Telephoto" },
+      { "label": "Screen Size", "value": "6.3-inch" },
+      { "label": "Battery", "value": "3577 mAh" }
+    ]
+  },
+  {
+    "itemname": "Samsung S24 Ultra",
+    "category": "Phones",
+    "image": "https://images.samsung.com/in/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-color-carousel-exclusive.jpg",
+    "itemprops": [
+      { "label": "Zoom", "value": "100x Space Zoom" },
+      { "label": "Stylus", "value": "S-Pen Included" }
+    ]
+  },
+  {
+    "itemname": "Google Pixel 9",
+    "category": "Phones",
+    "image": "https://images.unsplash.com/photo-1727132528094-117c9dceb047?q=80&w=1031&auto=format&fit=crop",
+    "itemprops": [{ "label": "Chip", "value": "Tensor G4" }]
+  },
+  {
+    "itemname": "OnePlus 12",
+    "category": "Phones",
+    "image": "https://images.unsplash.com/photo-1726732970014-f2df88c87dd3?q=80&w=800&auto=format&fit=crop",
+    "itemprops": [{ "label": "Charge", "value": "100W" }]
+  },
+  {
+    "itemname": "Nothing Phone 2",
+    "category": "Phones",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop",
+    "itemprops": [{ "label": "Glyph", "value": "Version 2.0" }]
+  },
+  {
+    "itemname": "Motorola Edge 50 Pro",
+    "category": "Phones",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop",
+    "itemprops": [{ "label": "Display", "value": "144Hz pOLED" }]
+  },
+  {
+    "itemname": "ASUS ROG Phone 8",
+    "category": "Phones",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop",
+    "itemprops": [{ "label": "Audio", "value": "3.5mm Jack Included" }]
+  }
+]

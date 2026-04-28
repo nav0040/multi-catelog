@@ -1,0 +1,57 @@
+[
+  {
+    "itemname": "MacBook Pro M3",
+    "category": "Computers",
+    "image": "https://images.unsplash.com/photo-1724859234679-964acf07b126?q=80&w=870&auto=format&fit=crop",
+    "itemprops": [
+      { "label": "Processor", "value": "Apple M3 Max" },
+      { "label": "RAM", "value": "36GB" },
+      { "label": "Display", "value": "Liquid Retina XDR" }
+    ]
+  },
+  {
+    "itemname": "Dell XPS 15",
+    "category": "Computers",
+    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-4.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=677&qlt=100,1&resMode=sharp2&size=677,402&chrss=full",
+    "itemprops": [
+      { "label": "GPU", "value": "RTX 4050" },
+      { "label": "Chassis", "value": "CNC Aluminum" }
+    ]
+  },
+  {
+    "itemname": "ASUS ROG Zephyrus",
+    "category": "Computers",
+    "image": "https://www.amd.com/content/dam/amd/en/images/products/laptops/2201103-amd-advantage-laptop-rog-zephyrus-g14-video-thumbnail.png",
+    "itemprops": [{ "label": "Screen", "value": "OLED" }]
+  },
+  {
+    "itemname": "Lenovo Legion 5",
+    "category": "Computers",
+    "image": "https://cdn.mos.cms.futurecdn.net/iATyhDP3bd5cX9Jn5TsTiM-1920-80.jpg.webp",
+    "itemprops": [{ "label": "GPU", "value": "RTX 4060" }]
+  },
+  {
+    "itemname": "Surface Pro 9",
+    "category": "Computers",
+    "image": "https://images.unsplash.com/photo-1682939634606-363829072b91?q=80&w=464&auto=format&fit=crop",
+    "itemprops": [{ "label": "CPU", "value": "Intel i7" }]
+  },
+  {
+    "itemname": "HP Spectre x360",
+    "category": "Computers",
+    "image": "https://images.unsplash.com/photo-1599299009482-3b5326fc52e4?q=80&w=870&auto=format&fit=crop",
+    "itemprops": [{ "label": "Nits", "value": "400" }]
+  },
+  {
+    "itemname": "Alienware m18",
+    "category": "Computers",
+    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/alienware-m18-mlk/media-gallery/hd/laptop-alienware-m18-r2-hd-perkey-intel-bk-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=522&qlt=100,1&resMode=sharp2&size=522,402&chrss=full",
+    "itemprops": [{ "label": "Display", "value": "18-inch QHD+" }]
+  },
+  {
+    "itemname": "HP Omen 16",
+    "category": "Computers",
+    "image": "https://images.unsplash.com/photo-1613750147830-c770850838b0?q=80&w=435&auto=format&fit=crop",
+    "itemprops": [{ "label": "Cooling", "value": "Tempest Cooling" }]
+  }
+]

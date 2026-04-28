@@ -1,0 +1,98 @@
+[
+  {
+    "itemname": "Kia Sonet",
+    "category": "Cars",
+    "image": "https://stimg.cardekho.com/images/car-images/930x620/Kia/Sonet/9783/1705386619542/222_Pewter-Olive_33382d.jpg",
+    "itemprops": [
+      { "label": "Color", "value": "Pewter Olive" },
+      { "label": "Engine", "value": "1.2L Kappa" },
+      { "label": "RPM", "value": "6000" },
+      { "label": "Capacity", "value": "5 Seater" }
+    ]
+  },
+  {
+    "itemname": "Tesla Model 3",
+    "category": "Cars",
+    "image": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Main-Hero-Desktop-LHD.jpg",
+    "itemprops": [
+      { "label": "Range", "value": "341 miles" },
+      { "label": "0-60 mph", "value": "5.8s" },
+      { "label": "Top Speed", "value": "125 mph" }
+    ]
+  },
+  {
+    "itemname": "Hyundai Tucson",
+    "category": "Cars",
+    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Tucson/10133/1762431617294/front-left-side-47.jpg",
+    "itemprops": [{ "label": "AWD", "value": "Yes" }]
+  },
+  {
+    "itemname": "Honda Civic",
+    "category": "Cars",
+    "image": "https://images10.gaadi.com/usedcar_image/5247609/original/processed_50a4a83c-3124-4bde-982c-ab0888306cfb.jpg?imwidth=930",
+    "itemprops": [{ "label": "Hybrid", "value": "Available" }]
+  },
+  {
+    "itemname": "Toyota Fortuner",
+    "category": "Cars",
+    "image": "https://static3.toyotabharat.com/images/showroom/fortuner/fortuner-mmc/new-fortuner.webp",
+    "itemprops": [{ "label": "Engine", "value": "2.8L Diesel" }]
+  },
+  {
+    "itemname": "Volkswagen Virtus",
+    "category": "Cars",
+    "image": "https://cdn-s3.autocarindia.com/volkswagen/Virtus/500_8133.jpg?w=640&q=75",
+    "itemprops": [{ "label": "TSI", "value": "1.5L" }]
+  },
+  {
+    "itemname": "Ford Mustang",
+    "category": "Cars",
+    "image": "https://images.unsplash.com/photo-1591293836027-e05b48473b67?q=80&w=870&auto=format&fit=crop",
+    "itemprops": [{ "label": "Engine", "value": "5.0L Coyote V8" }]
+  },
+  {
+    "itemname": "Audi e-tron GT",
+    "category": "Cars",
+    "image": "https://images.unsplash.com/photo-1615222874898-37089fcf47ee?q=80&w=465&auto=format&fit=crop",
+    "itemprops": [{ "label": "0-100", "value": "3.3s" }]
+  },
+  {
+    "itemname": "Porsche 911",
+    "category": "Cars",
+    "brand": "Porsche",
+    "segment": "Sport Car",
+    "year": "2023",
+    "image": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=1200&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 120,
+    "itemprops": [
+      { "label": "Engine", "value": "3.0L twin-turbo flat-6" },
+      { "label": "Power", "value": "379 hp" },
+      { "label": "0–60 mph", "value": "~4.0s" },
+      { "label": "Weight", "value": "1435 kg" }
+    ]
+  },
+  {
+    "itemname": "Jeep Wrangler",
+    "category": "Cars",
+    "image": "https://images.unsplash.com/photo-1640021042546-2a1b900f324b?q=80&w=464&auto=format&fit=crop",
+    "itemprops": [{ "label": "Offroad", "value": "Rock-Trac 4WD" }]
+  },
+  {
+    "itemname": "Land Rover Defender",
+    "category": "Cars",
+    "image": "https://images.unsplash.com/photo-1722786102904-c6bf6bec8fc3?q=80&w=870&auto=format&fit=crop",
+    "itemprops": [{ "label": "Ground Clearance", "value": "291mm" }]
+  },
+  {
+    "itemname": "Lamborghini Revuelto",
+    "category": "Cars",
+    "image": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=870&auto=format&fit=crop",
+    "itemprops": [{ "label": "Hybrid", "value": "V12 PHEV" }]
+  }
+]

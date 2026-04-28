@@ -1,0 +1,145 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 3.5vw, 2rem);
+  min-width: 0;
+}
+
+.preGallery {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 3vw, 1.5rem);
+  min-width: 0;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--detail-radius-sm, 10px);
+  background: var(--detail-surface, #fff);
+  border: 1px solid var(--detail-border, #d2d2d7);
+  color: var(--detail-text, #1d1d1f);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.back:hover {
+  background: #f5f5f7;
+  border-color: #c7c7cc;
+}
+
+.headRow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-md, 1rem);
+  min-width: 0;
+}
+
+@media (min-width: 720px) {
+  .headRow {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-lg, 1.5rem);
+  }
+}
+
+.lead {
+  min-width: 0;
+}
+
+.breadcrumbs {
+  margin: 0 0 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--detail-muted, #6e6e73);
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem 0.25rem;
+}
+
+.crumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.sep {
+  color: var(--detail-muted, #aeaeb2);
+  user-select: none;
+}
+
+.crumbText {
+  word-break: break-word;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--detail-text, #1d1d1f);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.75rem;
+}
+
+.titleName {
+  word-break: break-word;
+}
+
+.year {
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  font-weight: 600;
+  color: var(--detail-muted, #6e6e73);
+  letter-spacing: -0.02em;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+@media (min-width: 720px) {
+  .actions {
+    justify-content: flex-end;
+    flex-shrink: 0;
+    padding-bottom: 0.15rem;
+  }
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  color: var(--detail-muted, #6e6e73);
+}
+
+.star {
+  flex-shrink: 0;
+  color: #e8b008;
+}
+
+.ratingValue {
+  font-weight: 600;
+  color: var(--detail-text, #1d1d1f);
+}
+
+.reviews {
+  color: var(--detail-muted, #6e6e73);
+}

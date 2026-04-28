@@ -1,0 +1,27 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--color-border);
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  min-width: 0;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
