@@ -15,12 +15,12 @@
   z-index: 0;
   pointer-events: none;
   background-color: var(--mega-nav-shelf);
-  border-radius: clamp(18px, 3vw, 28px) clamp(18px, 3vw, 28px) 0 0;
+  border-radius: 0;
   clip-path: path(
-    "M 0 100% L 0 26% Q 0 0 2.4% 0 L 33.5% 0 C 37.5% 0 39.5% 24% 50% 24% C 60.5% 24% 62.5% 0 66.5% 0 L 97.6% 0 Q 100% 0 100% 26% L 100% 100% Z"
+    "M 0 100% L 0 0 L 33.5% 0 C 37.5% 0 39.5% 24% 50% 24% C 60.5% 24% 62.5% 0 66.5% 0 L 100% 0 L 100% 100% Z"
   );
   -webkit-clip-path: path(
-    "M 0 100% L 0 26% Q 0 0 2.4% 0 L 33.5% 0 C 37.5% 0 39.5% 24% 50% 24% C 60.5% 24% 62.5% 0 66.5% 0 L 97.6% 0 Q 100% 0 100% 26% L 100% 100% Z"
+    "M 0 100% L 0 0 L 33.5% 0 C 37.5% 0 39.5% 24% 50% 24% C 60.5% 24% 62.5% 0 66.5% 0 L 100% 0 L 100% 100% Z"
   );
 }
 
@@ -28,7 +28,7 @@
   .bar::before {
     clip-path: none;
     -webkit-clip-path: none;
-    border-radius: clamp(18px, 3vw, 28px) clamp(18px, 3vw, 28px) 0 0;
+    border-radius: 0;
   }
 }
 
@@ -99,7 +99,7 @@
 }
 
 .titleSub {
-  font-family: var(--font-landing-sans), var(--font-sans);
+  font-family: var(--font-sans);
   font-size: clamp(0.5625rem, 1.35vw, 0.6875rem);
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -131,10 +131,10 @@
 
   .bar::before {
     clip-path: path(
-      "M 0 100% L 0 22% Q 0 0 2.4% 0 L 30% 0 C 36% 0 39% 18% 50% 18% C 61% 18% 64% 0 70% 0 L 97.6% 0 Q 100% 0 100% 22% L 100% 100% Z"
+      "M 0 100% L 0 0 L 30% 0 C 36% 0 39% 18% 50% 18% C 61% 18% 64% 0 70% 0 L 100% 0 L 100% 100% Z"
     );
     -webkit-clip-path: path(
-      "M 0 100% L 0 22% Q 0 0 2.4% 0 L 30% 0 C 36% 0 39% 18% 50% 18% C 61% 18% 64% 0 70% 0 L 97.6% 0 Q 100% 0 100% 22% L 100% 100% Z"
+      "M 0 100% L 0 0 L 30% 0 C 36% 0 39% 18% 50% 18% C 61% 18% 64% 0 70% 0 L 100% 0 L 100% 100% Z"
     );
   }
 }

@@ -20,7 +20,7 @@
   width: 100%;
   background: var(--detail-bg);
   color: var(--detail-text);
-  font-family: var(--font-landing-sans, system-ui), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans);
 }
 
 .main {

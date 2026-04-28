@@ -11,7 +11,7 @@ type Props = {
 const PLACEHOLDER =
   "data:image/svg+xml," +
   encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500"><rect fill="%23e8eaed" width="800" height="500"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%236e6e73" font-family="system-ui" font-size="16">Image unavailable</text></svg>`,
+    `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500"><rect fill="%23e8eaed" width="800" height="500"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%236e6e73" font-family="Poppins, sans-serif" font-size="16">Image unavailable</text></svg>`,
   );
 
 function Chevron({ dir }: { dir: "prev" | "next" }) {

@@ -1,6 +1,6 @@
 .logo {
   display: inline-block;
-  font-family: var(--font-mega-wordmark), var(--font-landing-display), var(--font-sans);
+  font-family: var(--font-wordmark);
   font-size: clamp(1.85rem, 5vw, 2.65rem);
   font-weight: 700;
   letter-spacing: 0.34em;

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Bebas_Neue, DM_Sans, Orbitron } from "next/font/google";
+import { Bebas_Neue, Orbitron, Poppins } from "next/font/google";
 import "./globals.css";
 
 const landingDisplay = Bebas_Neue({
@@ -8,8 +8,9 @@ const landingDisplay = Bebas_Neue({
   variable: "--font-landing-display",
 });
 
-const landingSans = DM_Sans({
+const landingSans = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-landing-sans",
 });
 
@@ -36,12 +37,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${landingDisplay.variable} ${landingSans.variable} ${megaWordmark.variable}`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${landingDisplay.variable} ${landingSans.variable} ${megaWordmark.variable}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

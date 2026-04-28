@@ -14,8 +14,20 @@ A **Next.js** web app that showcases **multiple product categories** (cars, bike
 | **Styling** | **CSS Modules** (`.module.css`) per component + **global design tokens** in `src/app/globals.css` |
 | **Animation** | [Framer Motion](https://www.framer.com/motion/) (interactive hero / scroll-driven UI) |
 | **Tooling** | ESLint (`eslint-config-next`), PostCSS, **Tailwind CSS v4** (in dependencies; can be wired for utilities alongside CSS Modules) |
-| **Fonts** | [— Bebas Neue, DM Sans, Orbitron |
+| **Fonts** | **Poppins** (body/UI) |
 | **Data** | Static **JSON** shards merged at build time (no external API) |
+
+### Typography
+
+Fonts load in **`src/app/layout.tsx`** and CSS variables are attached to **`<html>`** so tokens work app-wide.
+
+| Role | Font | Usage |
+|------|------|--------|
+| **Body / UI** | **Poppins** (weights 400–700) | Default text, nav, buttons, grids, item detail — referenced as **`var(--font-sans)`** in `globals.css` |
+| **Display headlines** | **Bebas Neue** | Large hero-style titles (e.g. mega hero, scroll-morph arc headline) — **`var(--font-display)`** |
+| **Logo wordmark** | **Orbitron** | Header logo — **`var(--font-wordmark)`** |
+
+Shared aliases live in **`src/app/globals.css`**: `--font-sans`, `--font-display`, `--font-wordmark`. Components should use these variables rather than ad-hoc `font-family` stacks.
 
 ---
 

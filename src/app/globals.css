@@ -8,7 +8,12 @@
   --color-text-muted: #9aacbc;
   --color-accent: #5b9fd4;
   --color-accent-soft: rgba(91, 159, 212, 0.15);
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  /* next/font on <html>: Poppins, Bebas Neue, Orbitron → use tokens below only */
+  --font-sans: var(--font-landing-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-landing-display), var(--font-landing-sans), ui-sans-serif,
+    system-ui, sans-serif;
+  --font-wordmark: var(--font-mega-wordmark), var(--font-landing-display),
+    var(--font-landing-sans), ui-sans-serif, system-ui, sans-serif;
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;

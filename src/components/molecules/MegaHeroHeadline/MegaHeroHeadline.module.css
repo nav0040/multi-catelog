@@ -7,7 +7,7 @@
 
 .line1 {
   margin: 0;
-  font-family: var(--font-landing-sans), var(--font-sans);
+  font-family: var(--font-sans);
   font-size: clamp(0.8125rem, 1.6vw, 0.9375rem);
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -18,7 +18,7 @@
 
 .line2 {
   margin: 0.35rem 0 0;
-  font-family: var(--font-landing-display), var(--font-sans);
+  font-family: var(--font-display);
   font-size: clamp(2.25rem, 7vw, 3.75rem);
   font-weight: 400;
   letter-spacing: 0.08em;

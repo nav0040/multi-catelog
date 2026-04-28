@@ -381,7 +381,7 @@ export function ScrollMorphHero({
       <div className={styles.bottomFade} aria-hidden />
       {!reduceMotion && (
         <p className={styles.scrollCue} aria-hidden>
-          Skim here — then scroll the page for categories & filters
+          Skim here, then scroll for categories & filters
         </p>
       )}
     </div>

@@ -22,7 +22,7 @@ type Props = {
 const PLACEHOLDER =
   "data:image/svg+xml," +
   encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="225" viewBox="0 0 400 225"><rect fill="%23232d3b" width="400" height="225"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%239aacbc" font-family="system-ui" font-size="14">Image unavailable</text></svg>`,
+    `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="225" viewBox="0 0 400 225"><rect fill="%23232d3b" width="400" height="225"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%239aacbc" font-family="Poppins, sans-serif" font-size="14">Image unavailable</text></svg>`,
   );
 
 export function AspectImage({

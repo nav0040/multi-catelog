@@ -1,4 +1,3 @@
-import { MegaStyleHeader } from "@/components/organisms/MegaStyleHeader/MegaStyleHeader";
 import { ScrollMorphHero } from "@/components/ui/scroll-morph-hero";
 import styles from "./LandingHeroSection.module.css";
 
@@ -8,10 +7,11 @@ type Props = {
 
 export function LandingHeroSection({ productPreviewSrcs }: Props) {
   return (
-    <div className={styles.shell}>
-      <MegaStyleHeader />
-      <div className={styles.heroMorph}>
-        <ScrollMorphHero images={productPreviewSrcs} />
+    <div className={styles.landingWrap}>
+      <div className={styles.shell}>
+        <div className={styles.heroMorph}>
+          <ScrollMorphHero images={productPreviewSrcs} />
+        </div>
       </div>
     </div>
   );

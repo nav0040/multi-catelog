@@ -1,11 +1,20 @@
-.shell {
+/* Wrapper avoids overflow on the same ancestor as the sticky bar (overflow breaks sticky). */
+.landingWrap {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 0;
   color: #0a0a0a;
   background-color: #ffffff;
-  overflow-x: hidden;
+  /* Tuck under the sticky header’s bottom edge (same seam as before) */
+  margin-top: -1px;
+}
+
+.shell {
+  position: relative;
+  width: 100%;
   min-width: 0;
+  min-height: 0;
 }
 
 .heroMorph {
@@ -15,10 +24,6 @@
   margin-top: -1px;
   border-top: 1px solid rgba(10, 10, 10, 0.04);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  overflow-x: clip;
 }
 
-.shell a:focus-visible,
-.shell button:focus-visible {
-  outline: 2px solid #0a0a0a;
-  outline-offset: 2px;
-}

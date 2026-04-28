@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-landing-sans), var(--font-sans);
+  font-family: var(--font-sans);
   font-size: 0.8125rem;
   font-weight: 500;
   color: #0a0a0a;

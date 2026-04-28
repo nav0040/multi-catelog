@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { MegaStyleHeader } from "@/components/organisms/MegaStyleHeader/MegaStyleHeader";
 import { LandingHeroSection } from "@/components/organisms/LandingHeroSection/LandingHeroSection";
 import { CatalogFashionGrid } from "@/components/organisms/CatalogFashionGrid/CatalogFashionGrid";
 import { buildHeroProductImages } from "@/lib/heroProductImages";
@@ -15,6 +16,7 @@ export function CatalogHomeTemplate({ groups }: Props) {
 
   return (
     <main className={styles.main}>
+      <MegaStyleHeader />
       <LandingHeroSection productPreviewSrcs={heroProductImages} />
       <CatalogFashionGrid groups={groups} />
     </main>

@@ -25,7 +25,7 @@
 
 .copy {
   margin: 0;
-  font-family: var(--font-landing-sans), var(--font-sans);
+  font-family: var(--font-sans);
   font-size: 0.75rem;
   line-height: 1.45;
   color: #6b7280;
