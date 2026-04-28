@@ -72,52 +72,72 @@
   max-width: 100%;
 }
 
+/* Editorial stack (overline → title → subcopy), upper field like reference layouts */
 .arcContent {
   position: absolute;
-  top: clamp(5%, 8vh, 10%);
+  top: clamp(9%, 12vh, 15%);
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   pointer-events: none;
-  width: min(100% - 2rem, min(19rem, 48vmin));
-  max-width: min(19rem, 48vmin);
-  padding: 0 0.75rem;
+  width: min(100% - 1.5rem, 36rem);
+  max-width: min(36rem, 92vw);
+  padding: 0 clamp(0.75rem, 3vw, 1.5rem);
   box-sizing: border-box;
+  gap: clamp(0.55rem, 1.8vw, 0.85rem);
+}
+
+.arcOverline {
+  margin: 0;
+  font-family: var(--font-landing-sans, system-ui), system-ui, sans-serif;
+  font-size: clamp(0.5625rem, 1.15vw, 0.6875rem);
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #9a7b52;
+  line-height: 1.3;
 }
 
 .arcHeadline {
-  margin: 0 0 0.65rem;
-  font-size: clamp(1rem, 2.85vw, 1.375rem);
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  color: #111827;
-  line-height: 1.25;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(1.25rem, 3.6vw, 2.125rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #1e1916;
+  line-height: 1.12;
+  max-width: min(100%, 19.5rem);
   word-wrap: break-word;
   overflow-wrap: anywhere;
 }
 
 .arcBody {
   margin: 0;
-  font-size: clamp(0.6875rem, 1.65vw, 0.8125rem);
-  color: #4b5563;
-  line-height: 1.55;
-  max-width: 100%;
+  margin-top: clamp(0.15rem, 0.6vw, 0.35rem);
+  max-width: min(34em, 100%);
+  font-family: var(--font-landing-sans, system-ui), system-ui, sans-serif;
+  font-size: clamp(0.75rem, 1.75vw, 0.9375rem);
+  font-weight: 400;
+  color: rgba(55, 48, 42, 0.62);
+  line-height: 1.58;
+  letter-spacing: 0.01em;
   word-wrap: break-word;
   overflow-wrap: anywhere;
 }
 
-.brDesktopOnly {
-  display: none;
-}
-
 @media (min-width: 768px) {
-  .brDesktopOnly {
-    display: block;
+  .arcContent {
+    top: clamp(10%, 11vh, 14%);
+    max-width: min(40rem, 88vw);
+  }
+
+  .arcHeadline {
+    max-width: min(100%, 24rem);
   }
 }
 

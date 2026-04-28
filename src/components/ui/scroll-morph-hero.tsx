@@ -20,6 +20,9 @@ export type ScrollMorphHeroProps = {
   className?: string;
   introTitle?: string;
   introHint?: string;
+  /** Small caps line above the headline (arc phase), e.g. “Curated catalog”. */
+  overline?: string;
+  /** Main title when the arc forms; use `\n` for a deliberate second line. */
   headline?: string;
   description?: string;
   /** Product image URLs, e.g. from `buildHeroProductImages(catalogItems.map((i) => i.image))`. */
@@ -77,9 +80,10 @@ export function ScrollMorphHero({
   className,
   introTitle = "Cars, bikes, phones, workstations—one place to browse them all.",
   introHint = "Scroll to skim real listings from the catalog",
-  headline = "Preview what’s in stock—then go deep on specs and price.",
+  overline = "Curated catalog",
+  headline = "Cars, bikes, phones & workstations\ncomposed on one shelf.",
   description =
-    "The frames you see here mirror actual product photography from our inventory. Use the arc to scan the lineup the way a shopper scans a shelf—then scroll on for categories, filters, and every detail.",
+    "Keep scrolling to pull scattered listing photos into this arc—a calm beat before you open categories, filters, and every spec below.",
   images = PRODUCT_FALLBACK_IMAGES,
 }: ScrollMorphHeroProps) {
   const reduceMotion = useReducedMotion();
@@ -286,15 +290,16 @@ export function ScrollMorphHero({
           style={reduceMotion ? { opacity: 1 } : { opacity: contentOpacity }}
           className={styles.arcContent}
         >
-          <h2 className={styles.arcHeadline}>{headline}</h2>
-          <p className={styles.arcBody}>
-            {description.split("\n").map((line, idx, arr) => (
+          <p className={styles.arcOverline}>{overline}</p>
+          <h2 className={styles.arcHeadline}>
+            {headline.split("\n").map((line, idx) => (
               <React.Fragment key={idx}>
-                {line}
-                {idx < arr.length - 1 && <br className={styles.brDesktopOnly} />}
+                {idx > 0 ? <br /> : null}
+                {line.trim()}
               </React.Fragment>
             ))}
-          </p>
+          </h2>
+          <p className={styles.arcBody}>{description}</p>
         </motion.div>
 
         <div className={styles.cardsStage}>
@@ -331,7 +336,7 @@ export function ScrollMorphHero({
               const circlePos = {
                 x: Math.cos(circleRad) * circleRadius,
                 y: Math.sin(circleRad) * circleRadius,
-                rotation: circleAngle + 90,
+                rotation: 0,
               };
 
               const baseRadius = Math.min(containerSize.width, containerSize.height * 1.5);
@@ -353,7 +358,7 @@ export function ScrollMorphHero({
               const arcPos = {
                 x: Math.cos(arcRad) * arcRadius + parallaxValue,
                 y: Math.sin(arcRad) * arcRadius + arcCenterY,
-                rotation: currentArcAngle + 90,
+                rotation: 0,
                 scale: isMobile ? 1.4 : 1.8,
               };
 
